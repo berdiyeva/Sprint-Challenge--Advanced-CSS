@@ -1,1 +1,32 @@
 // Navigation code here
+
+.header-nav {
+    margin: 1%;
+    .flex-layout(space-between, center);
+    flex-direction: column;
+    background-color: @nav-bg;
+    
+    h1 {
+        margin: 2%;
+    }
+    nav {
+        width: 55%;
+        border: 1px solid @nav-border;
+        color: @nav-font;
+
+        @media @mobile {
+            width: 70%; 
+        }
+
+        .flex-layout(space-evenly, center);
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: @nav-font;
+            margin: 1%;
+        }
+    }
+
+}
+
